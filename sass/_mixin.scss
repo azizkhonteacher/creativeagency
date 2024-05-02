@@ -1,0 +1,23 @@
+@mixin NunitoFont($fw, $fz, $lh: 1.2) {
+  font-weight: $fw;
+  font-size: $fz + px;
+  line-height: $lh;
+  font-family: "Nunito", sans-serif;
+}
+
+@mixin font($fw2, $fz2, $lh2: 1.2) {
+  font-weight: $fw2;
+  font-size: $fz2 + px;
+  line-height: $lh2;
+  font-family: "Quicksand", sans-serif;
+}
+@mixin siteBtns {
+  border: none;
+  border-radius: 24px;
+  padding: 12px 50px;
+  box-shadow: 0px 4px 8px 0px #377dff80;
+  background: var(--site-btns);
+  color: var(--site-btns-t);
+  @include font(700, 16, 1.5);
+  cursor: pointer;
+}

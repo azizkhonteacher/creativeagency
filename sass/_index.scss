@@ -1,0 +1,158 @@
+header {
+  padding: 72px 0 68px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .site__logo {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &-img {
+        display: flex;
+        width: 53px;
+        height: 50px;
+        flex-shrink: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h2 {
+          @include font(700, 20);
+          color: var(--logo-title-h2);
+        }
+        p {
+          @include font(400, 16);
+          color: var(--logo-title-h2);
+        }
+      }
+    }
+
+    .site__nav {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      &-link {
+        a {
+          display: flex;
+          @include font(400, 18, 1.4);
+          color: var(--logo-title-h2);
+          transition: 0.3;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .site__button {
+      &-btn {
+        display: flex;
+        border: 1px solid var(--site-btn);
+        background: none;
+        padding: 12px 50px;
+        border-radius: 24px;
+        cursor: pointer;
+
+        @include font(700, 16, 1.5);
+        color: var(--site-btn);
+      }
+    }
+  }
+}
+
+.main {
+  &__hero {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-title {
+      width: 750px;
+      h2 {
+        @include NunitoFont(800, 64, 1.4);
+        color: var(--logo-title-h2);
+        text-align: center;
+      }
+    }
+    &-text{
+        width: 767px;
+        p{
+            @include NunitoFont(400, 20, 1.5);
+            color: var(--main-hero-text);
+            text-align: center;
+            padding: 24px 0 32px;
+        }
+    }
+    &-button{
+        button{
+            @include siteBtns;
+        }
+    }
+    &-img{
+        width: 740px;
+        height: 500px;
+        display: flex;
+        position: relative;
+        margin: 96px 0 56px;
+        img{
+            border-radius: 50px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        &-price{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            box-shadow: 0px 8px 24px 0px #00000026;
+            background: #fff;
+            border-radius: 16px;
+        }
+        &-price{
+            padding: 15px 31px 16px 20px;
+            left: -107px;
+            top: 24px;
+            &-star{
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                span{
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                    background: url("../images/svg/star.svg") center/contain no-repeat;
+                }
+                p{
+                    @include font(700, 12, 1.1);
+                    color: var(--logo-title-h2);
+                    text-transform: uppercase;
+                    opacity: 0.8;
+                }
+            }
+            &-num{
+                h2{
+                    @include NunitoFont(600, 24, 1.5);
+                    color: var(--logo-title-h2);
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
