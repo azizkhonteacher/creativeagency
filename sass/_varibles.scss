@@ -1,17 +1,27 @@
 :root {
+  --bg: #fdffff;
   --logo-title-h2: #1d1d1d;
   --site-btn: #377dff;
   --main-hero-text: #464646;
   --site-btns: #377dff;
   --site-btns-t: #ffffff;
   --price-bg: #FFFFFF;
+
+  --btn-play: url("../images/svg/play-circle.svg");
 }
 
 .dark {
+  --bg: #0e0e0e;
   --logo-title-h2: #e2e2e2;
   --site-btn: #e2e2e2;
   --main-hero-text: #e2e2e2;
   --site-btns: #e2e2e2;
   --site-btns-t: #0d0d0d;
   --price-bg: #0d0d0d;
+
+  --btn-play: url("../images/svg/play-circle-dark.svg");
+}
+
+html{
+  background: var(--bg);
 }
