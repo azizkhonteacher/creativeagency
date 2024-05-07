@@ -6,8 +6,17 @@
   --site-btns: #377dff;
   --site-btns-t: #ffffff;
   --price-bg: #FFFFFF;
+  --item-border: #0000001a;
+  --item-hover: #ffffff;
 
   --btn-play: url("../images/svg/play-circle.svg");
+  --arrow-1: url("../images/svg/arrow-right.svg");
+
+  --item-1: url("../images/svg/monitor.svg");
+  --item-1-color: #377DFF;
+
+  --item-2: url("../images/svg/settings.svg");
+  --item-2-color: #FF2D2D;
 }
 
 .dark {
@@ -18,8 +27,14 @@
   --site-btns: #e2e2e2;
   --site-btns-t: #0d0d0d;
   --price-bg: #0d0d0d;
+  --item-border: #FFFFFF1A;
+  --item-hover: #0B0F15;
 
   --btn-play: url("../images/svg/play-circle-dark.svg");
+  --arrow-1: url("../images/svg/arrow-right-dark.svg");
+
+  --item-1: url("../images/svg/monitor-dark.svg");
+  --item-1-color: #E2E2E2;
 }
 
 html{
