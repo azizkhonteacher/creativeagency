@@ -447,26 +447,26 @@ header {
       }
     }
   }
-  &__portfolio{
+  &__portfolio {
     padding: 130px 0 196px;
-    .container{
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-    &-sub-title{
+    &-sub-title {
       color: var(--site-btn);
       @include font(600, 24, 1);
       letter-spacing: 1%;
     }
-    &-title{
+    &-title {
       color: var(--logo-title-h2);
       @include NunitoFont(400, 55, 1.4);
       letter-spacing: 0.3%;
       padding: 20px 0 28px;
     }
-    &-text{
+    &-text {
       color: var(--main-hero-text);
       @include font(400, 20, 1.7);
       letter-spacing: 1%;
@@ -474,25 +474,25 @@ header {
       width: 674px;
     }
 
-    &-wrap{
+    &-wrap {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin: 73px 0 59px;
       gap: 76px;
-      .img{
+      .img {
         position: relative;
         display: flex;
         width: 350px;
         height: 350px;
         flex-shrink: 0;
-        img{
+        img {
           width: 100%;
           height: 100%;
           border-radius: 30px;
           object-fit: cover;
         }
-        &-text{
+        &-text {
           color: #fff;
           @include font(700, 24, 1);
           letter-spacing: 0.3%;
@@ -500,14 +500,136 @@ header {
           left: 34px;
           bottom: 50px;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           transform: scale(1.15);
         }
       }
     }
-    &-btn{
+    &-btn {
       display: flex;
       @include siteBtns2;
+    }
+  }
+
+  &__testimonial {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-sub-title {
+      color: var(--site-btn);
+      @include font(600, 24, 1);
+      letter-spacing: 1%;
+      text-align: center;
+    }
+    &-title {
+      color: var(--logo-title-h2);
+      @include NunitoFont(700, 55, 1.4);
+      letter-spacing: 0.3%;
+      text-align: center;
+      margin: 20px 0 50px;
+    }
+    &-wrap {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-radius: 20px;
+        box-shadow: var(--item-box-shadow);
+        background: var(--item-hover);
+        max-width: 380px;
+        height: 335px;
+        padding: 50px 31px 107px 40px;
+        gap: 25px;
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &-img {
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+      &-name{
+        color: var(--site-btn);
+        @include font(600, 20, 1.7);
+        letter-spacing: 1%;
+      }
+      &-type{
+        color: var(--main-hero-text);
+        @include font(400, 11, 1.2);
+        letter-spacing: 1%;
+      }
+    }
+    .user-info{
+      display: flex;
+      width: 100%;
+      color: var(--main-hero-text);
+      @include font(400, 18, 1.6);
+    }
+  }
+
+  &__help{
+    padding: 284px 0 178px;
+    .container{
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      max-width: 351px;
+    }
+    &-title{
+      color: var(--logo-title-h2);
+      @include NunitoFont(700, 55, 1.4);
+      letter-spacing: 0.3%;
+    }
+    &-text{
+      color: var(--main-hero-text);
+      @include font(400, 20, 1.7);
+      padding: 25px 0;
+    }
+    &-btn{
+      @include siteBtns;
+    }
+    &-imgs{
+      display: flex;
+      img{
+        display: flex;
+        width: 294px;
+        height: 288px;
+        border-radius: 16px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      img:nth-child(1){
+        transform: translateY(54px) translateX(32px);
+        z-index: 1;
+      }
+      img:nth-child(2){
+        transform: translateY(-37px);
+      }
     }
   }
 }
