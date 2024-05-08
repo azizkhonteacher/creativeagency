@@ -21,3 +21,15 @@
   @include font(700, 16, 1.5);
   cursor: pointer;
 }
+
+@mixin siteBtns2{
+  display: flex;
+  padding: 12px 50px;
+  border-radius: 24px;
+  gap: 10px;
+  border: 1px solid var(--site-btn);
+  background: none;
+  color: var(--site-btn);
+  @include font(700, 16, 1.5);
+  cursor: pointer;
+}
