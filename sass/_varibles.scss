@@ -11,7 +11,7 @@
   --footer-logo: #ffffff;
   --item-box-shadow: 0px 8px 24px 0px #0000000D;
 
-  --btn-play: url("../images/svg/play-circle.svg");
+  --btn-play: url("../images/svg/play-circle.svg") center/contain no-repeat;
   --arrow-1: url("../images/svg/arrow-right.svg");
 
   --item-1: url("../images/svg/monitor.svg");
@@ -40,7 +40,7 @@
   --footer-logo: #e2e2e2;
   --item-box-shadow: 0px 8px 24px 0px #A3A3A30D;
 
-  --btn-play: url("../images/svg/play-circle-dark.svg");
+  --btn-play: url("../images/svg/play-circle-dark.svg") center/contain no-repeat;
   --arrow-1: url("../images/svg/arrow-right-dark.svg");
 
   --item-1: url("../images/svg/monitor-dark.svg");

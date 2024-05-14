@@ -33,3 +33,9 @@
   @include font(700, 16, 1.5);
   cursor: pointer;
 }
+
+@mixin media($m){
+  @media (max-width: $m) {
+    @content;
+  }
+}

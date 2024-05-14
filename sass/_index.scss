@@ -68,6 +68,14 @@ header {
         color: var(--site-btn);
       }
     }
+    .site__burger {
+      display: none;
+      border: none;
+      width: 29px;
+      height: 25px;
+      flex-shrink: 0;
+      background: url("../images/icon_svg/burger.svg") center/contain no-repeat;
+    }
   }
 }
 
@@ -307,6 +315,7 @@ header {
               height: 24px;
               border-radius: 50%;
               background: var(--btn-play);
+              flex-shrink: 0;
             }
             p {
               color: var(--site-btn);
@@ -744,7 +753,7 @@ footer {
       }
     }
 
-    span{
+    span {
       display: flex;
       justify-content: center;
       width: 500px;
@@ -752,7 +761,7 @@ footer {
       background-color: var(--footer-logo);
     }
 
-    .footer__text{
+    .footer__text {
       display: flex;
       color: var(--footer-logo);
       @include font(400, 18, 1.3);

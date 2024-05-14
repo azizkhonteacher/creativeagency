@@ -1,0 +1,183 @@
+@include media(391px) {
+  .container {
+    padding: 0 25px;
+  }
+  header {
+    padding: 40px 0 69px;
+    .site__logo {
+      a {
+        gap: 8px;
+      }
+      &-img {
+        width: 32px;
+        height: 30px;
+      }
+      &-text {
+        gap: 0;
+        h2 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .site__nav {
+      display: none;
+    }
+    .site__button {
+      display: none;
+    }
+    .site__burger {
+      display: inline-block !important;
+    }
+  }
+
+  .main {
+    &__hero {
+      &-title {
+        width: 100%;
+        h2 {
+          font-size: 28px;
+        }
+      }
+      &-text {
+        width: 100%;
+        p {
+          font-size: 14px;
+          line-height: 1.7;
+          padding: 20px 0;
+        }
+      }
+      &-button {
+        button {
+          padding: 10px 35px;
+          font-size: 12px;
+        }
+      }
+      &-img {
+        width: 100%;
+        height: 224px;
+        padding: 12px 5px 15px;
+        margin: 50px 0 99px;
+        img {
+          border-radius: 12px;
+        }
+        &-price,
+        &-comt {
+          gap: 7px;
+          border-radius: 6px;
+        }
+        &-price {
+          padding: 8px 19px 9px 13px;
+          left: -9px;
+          top: -15px;
+          &-star {
+            span {
+              width: 16px;
+              height: 16px;
+            }
+            p {
+              font-size: 6px;
+            }
+          }
+          &-num {
+            h2 {
+              font-size: 12px;
+            }
+          }
+        }
+        &-comt {
+          padding: 13px 10px 10px;
+          bottom: -27px;
+          right: -11px;
+          &-peop {
+            gap: 6px;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+            .pep {
+              gap: 1px;
+              &-h {
+                font-size: 5px;
+              }
+              &-p {
+                font-size: 3px;
+              }
+            }
+          }
+          &-text {
+            width: 80px;
+            .peop-text {
+              width: 100%;
+              font-size: 5px;
+            }
+          }
+        }
+        .vec-1,
+        .vec-2 {
+          display: none;
+        }
+      }
+    }
+    .about {
+      padding: 0;
+      .container {
+        gap: 35px;
+      }
+      &__title {
+        gap: 10px;
+        .sub-title {
+          font-size: 14px;
+        }
+        .title {
+          font-size: 24px;
+        }
+      }
+      &__wrap {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 66px;
+        &-img {
+          width: 100%;
+          height: 242px;
+          order: 2;
+          img {
+            border-radius: 12px;
+          }
+        }
+        &-info {
+          gap: 35px;
+          width: 100%;
+          .p {
+            gap: 10px;
+            p {
+              font-size: 14px;
+            }
+          }
+          &-btns {
+            padding: 0 14px;
+            gap: 35px;
+            #about-as-btn {
+              padding: 10px 35px;
+              font-size: 12px;
+            }
+            #our-s-btn {
+              padding: 10px 35px;
+              span {
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
