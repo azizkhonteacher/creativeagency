@@ -949,7 +949,7 @@ footer .footer__icons .footer__text {
   font-family: "Quicksand", sans-serif;
 }
 
-@media (max-width: 391px) {
+@media (max-width: 395px) {
   .container {
     padding: 0 25px;
   }
