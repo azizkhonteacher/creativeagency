@@ -34,7 +34,7 @@ body {
   --footer-logo: #ffffff;
   --item-box-shadow: 0px 8px 24px 0px #0000000D;
   --btn-play: url("../images/svg/play-circle.svg") center/contain no-repeat;
-  --arrow-1: url("../images/svg/arrow-right.svg");
+  --arrow-1: url("../images/svg/arrow-right.svg") center/contain no-repeat;
   --item-1: url("../images/svg/monitor.svg");
   --item-1-color: #377DFF;
   --item-2: url("../images/svg/settings.svg");
@@ -1116,5 +1116,209 @@ footer .footer__icons .footer__text {
   }
   .main .about__wrap-info-btns #our-s-btn p {
     font-size: 12px;
+  }
+  .main__services {
+    padding: 99px 0 75px;
+  }
+  .main__services .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+  }
+  .main__services-info {
+    width: 100%;
+    text-align: center;
+    align-items: start;
+    justify-content: center;
+  }
+  .main__services-info .sub-title {
+    width: 100%;
+    font-size: 14px;
+  }
+  .main__services-info .title {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px 0 35px;
+  }
+  .main__services-info .text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .main__services-info .read-more {
+    margin-top: 4px;
+    gap: 10px;
+  }
+  .main__services-info .read-more p {
+    font-size: 14px;
+  }
+  .main__services-info .read-more span {
+    width: 20px;
+    height: 24px;
+  }
+  .main__services-items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+  .main__services-items .item {
+    padding: 35px 79px 59px;
+    gap: 27px;
+  }
+  .main__services-items-title {
+    font-size: 16px;
+  }
+  .main__portfolio {
+    padding: 0;
+  }
+  .main__portfolio-sub-title {
+    font-size: 14px;
+  }
+  .main__portfolio-title {
+    font-size: 24px;
+    padding: 10px 0 34px;
+  }
+  .main__portfolio-text {
+    font-size: 14px;
+    width: 100%;
+  }
+  .main__portfolio-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 54px;
+    margin: 34px 0 48px;
+  }
+  .main__portfolio-wrap .img {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 301px;
+  }
+  .main__portfolio-wrap .img-text {
+    left: 24px;
+    bottom: 24px;
+    font-size: 24px;
+  }
+  .main__portfolio-btn {
+    padding: 10px 35px;
+    font-size: 16px;
+  }
+  .main__testimonial {
+    padding-top: 104px;
+  }
+  .main__testimonial-sub-title {
+    font-size: 14px;
+  }
+  .main__testimonial-title {
+    font-size: 24px;
+    margin: 10px 0 35px;
+  }
+  .main__testimonial-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .main__testimonial-wrap .item {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px;
+    padding-right: 20px;
+    gap: 35px;
+  }
+  .main__testimonial .user-name {
+    font-size: 18px;
+  }
+  .main__testimonial .user-info {
+    font-size: 14px;
+  }
+  .main__help {
+    padding: 100px 0;
+  }
+  .main__help .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 142px;
+  }
+  .main__help-info {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+  .main__help-title {
+    font-size: 28px;
+  }
+  .main__help-text {
+    font-size: 14px;
+  }
+  .main__help-btn {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+  .main__help-imgs {
+    width: 100%;
+    position: relative;
+  }
+  .main__help-imgs img {
+    width: 180px;
+    height: 177px;
+  }
+  .main__help-imgs img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .main__help-imgs img:nth-child(1) {
+    transform: translate(0, 78px);
+    z-index: 1;
+    width: 221px;
+    height: 196px;
+  }
+  footer {
+    padding: 45px 0 61px;
+  }
+  footer .container {
+    gap: 90px;
+  }
+  footer .footer__links {
+    flex-direction: column;
+    gap: 80px;
+  }
+  footer .footer-ul {
+    flex-direction: column;
+    gap: 45px;
+  }
+  footer .footer-ul-1 {
+    justify-content: space-between;
+  }
+  footer .footer-ul-2 {
+    flex-direction: column;
+    gap: 45px;
+  }
+  footer .footer-ul-1 ul li:first-child, footer .footer-ul-2 ul li:first-child {
+    font-size: 18px;
+  }
+  footer .footer__icons {
+    gap: 20px;
+  }
+  footer .footer__icons-ul {
+    gap: 25px;
+  }
+  footer .footer__icons-ul a {
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+  }
+  footer .footer__icons-ul a img {
+    width: 21px;
+    height: 21px;
+  }
+  footer .footer__icons span {
+    width: 100%;
+  }
+  footer .footer__icons .footer__text {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

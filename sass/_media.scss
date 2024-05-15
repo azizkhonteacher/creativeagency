@@ -179,5 +179,215 @@
         }
       }
     }
+    &__services {
+      padding: 99px 0 75px;
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+      }
+      &-info {
+        width: 100%;
+        text-align: center;
+        align-items: start;
+        justify-content: center;
+        .sub-title {
+          width: 100%;
+          font-size: 14px;
+        }
+        .title {
+          width: 100%;
+          font-size: 24px;
+          padding: 10px 0 35px;
+        }
+        .text {
+          width: 100%;
+          font-size: 14px;
+          line-height: 1.7;
+        }
+        .read-more {
+          margin-top: 4px;
+          gap: 10px;
+          p {
+            font-size: 14px;
+          }
+          span {
+            width: 20px;
+            height: 24px;
+          }
+        }
+      }
+      &-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+        .item {
+          padding: 35px 79px 59px;
+          gap: 27px;
+        }
+        &-title {
+          font-size: 16px;
+        }
+      }
+    }
+    &__portfolio {
+      padding: 0;
+      &-sub-title {
+        font-size: 14px;
+      }
+      &-title {
+        font-size: 24px;
+        padding: 10px 0 34px;
+      }
+      &-text {
+        font-size: 14px;
+        width: 100%;
+      }
+      &-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 54px;
+        margin: 34px 0 48px;
+        .img {
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          width: 300px;
+          height: 301px;
+          &-text {
+            left: 24px;
+            bottom: 24px;
+            font-size: 24px;
+          }
+        }
+      }
+      &-btn {
+        padding: 10px 35px;
+        font-size: 16px;
+      }
+    }
+    &__testimonial {
+      padding-top: 104px;
+      &-sub-title {
+        font-size: 14px;
+      }
+      &-title {
+        font-size: 24px;
+        margin: 10px 0 35px;
+      }
+      &-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        .item {
+          width: 100%;
+          height: fit-content;
+          padding: 40px;
+          padding-right: 20px;
+          gap: 35px;
+        }
+      }
+      .user {
+        &-name {
+          font-size: 18px;
+        }
+      }
+      .user-info {
+        font-size: 14px;
+      }
+    }
+    &__help {
+      padding: 100px 0;
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 142px;
+      }
+      &-info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        order: 2;
+      }
+      &-title {
+        font-size: 28px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+      &-btn {
+        padding: 10px 35px;
+        font-size: 12px;
+      }
+      &-imgs {
+        width: 100%;
+        position: relative;
+        img {
+          width: 180px;
+          height: 177px;
+          &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+          &:nth-child(1) {
+            transform: translate(0, 78px);
+            z-index: 1;
+            width: 221px;
+            height: 196px;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    padding: 45px 0 61px;
+    .container{
+      gap: 90px;
+    }
+    .footer__links {
+      flex-direction: column;
+      gap: 80px; 
+    }
+    .footer-ul{
+      flex-direction: column;
+      gap: 45px;
+      &-1{
+        justify-content: space-between;
+      }
+      &-2{
+        flex-direction: column;
+        gap: 45px;
+      }
+      &-1, &-2{
+        ul{
+          li:first-child{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .footer__icons{
+      gap: 20px;
+      &-ul{
+        gap: 25px;
+        a{
+          width: 25px;
+          height: 25px;
+          padding: 7px;
+          img{
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+      span{
+        width: 100%;
+      }
+      .footer__text{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }
